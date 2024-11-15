@@ -28,23 +28,23 @@
     "git.decorations.enabled": false,
     "workbench.startupEditor": "none",
     "editor.lightbulb.enabled": "off",
-    "editor.selectionHighlight": false,
+    "editor.selectionHighlight": true,
     "editor.overviewRulerBorder": false,
     "editor.renderLineHighlight": "none",
     "editor.occurrencesHighlight": "off",
-    "problems.decorations.enabled": false,
+    "problems.decorations.enabled": true,
     "editor.renderControlCharacters": false,
     "editor.hideCursorInOverviewRuler": true,
-    "editor.gotoLocation.multipleReferences": "goto",
-    "editor.gotoLocation.multipleDefinitions": "goto",
-    "editor.gotoLocation.multipleDeclarations": "goto",
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "editor.gotoLocation.multipleImplementations": "goto",
-    "editor.gotoLocation.multipleTypeDefinitions": "goto",
+    "editor.gotoLocation.multipleReferences": "peek",
+    "editor.gotoLocation.multipleDefinitions": "peek",
+    "editor.gotoLocation.multipleDeclarations": "peek",
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "editor.gotoLocation.multipleImplementations": "peek",
+    "editor.gotoLocation.multipleTypeDefinitions": "peek",
 
     // Typography
-    "editor.fontFamily": "Geist Mono, JetBrains Mono, Fira Code",
-    "editor.suggestFontSize": 16,
+    "editor.fontFamily": "mononoki, Agave, Geist Mono, JetBrains Mono, Fira Code",
+    "editor.suggestFontSize": 20,
     "editor.suggestLineHeight": 30,
     "terminal.integrated.lineHeight": 1.5,
     "terminal.integrated.fontSize": 16,
@@ -70,17 +70,10 @@
     // Include "-" in word selection.
     "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
 
-    "prettier.requireConfig": true,
-    "prettier.useEditorConfig": false,
     "explorer.sortOrder": "type",
-    "prettier.tabWidth": 4,
-    "vetur.format.options.tabSize": 4,
     "workbench.tree.indent": 15,
     "editor.wordWrapColumn": 80,
     "files.autoSave": "afterDelay",
-    "editor.quickSuggestions": {
-        "strings": true
-    },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
@@ -88,12 +81,11 @@
     "editor.linkedEditing": true,
     "editor.formatOnSave": false,
     "editor.fontLigatures": true,
+    "editor.cursorStyle": "block",
     "diffEditor.wordWrap": "on",
     "notebook.output.wordWrap": true,
-    "editor.fontSize": 16,
+    "editor.fontSize": 20,
     "editor.minimap.maxColumn": 250,
-    "codesnap.containerPadding": "8em",
-    "codesnap.boxShadow": "rgba(0, 0, 0, 0.55) 0px 12px 24px",
     "explorer.confirmDelete": false,
     "editor.accessibilitySupport": "off",
     "chat.editor.wordWrap": "on",
@@ -102,9 +94,6 @@
     "workbench.activityBar.location": "hidden",
     "workbench.statusBar.visible": false,
     "editor.inlineSuggest.suppressSuggestions": true,
-    "codesnap.backgroundColor": "#FFC540",
-    "codesnap.showLineNumbers": false,
-    "codesnap.roundedCorners": true,
     "editor.padding.top": 16,
     "editor.cursorBlinking": "solid",
     "editor.stickyScroll.enabled": false,
@@ -132,16 +121,31 @@
     },
     "material-icon-theme.saturation": 0,
     "vscode_custom_css.imports": [
-        "file:///Users/user/Documents/vs-code-styles.css",
-        "file:///Users/user/Documents/vs-code-script.js",
+        "file:///Users/user/Documents/VS Code Settings/vs-code-styles.css",
+        "file:///Users/user/Documents/VS Code Settings/vs-code-script.js",
     ],
-    "workbench.colorTheme": "Catppuccin Alt Mocha",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right",
     "material-icon-theme.files.color": "#42a5f5",
     "workbench.tree.enableStickyScroll": false,
     "editor.codeLens": false,
     "window.titleBarStyle": "custom",
-    "terminal.integrated.shell.osx": "/bin/zsh",  // Replace with your shell path if different
-    "terminal.integrated.fontFamily": "MesloLGS NF",  // Or any Nerd Font you have installed
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "editor.find.autoFindInSelection": "never",
+
+    "background.enabled": true,
+    "background.editor": {
+        "useFront": false,
+        "images": ["file:///Users/user/Downloads/wp5306638-anime-pc-wallpapers.jpg"], // url of your image
+        "style": {
+            "background-position": "absolute",
+            "background-size": "cover",
+            "opacity": 0.1,
+        },
+        "opacity": 0.8, // 0.85 ~ 0.95 recommended
+        "size": "self-adaption", // also css, `cover` to self-adaption (recommended)，or `contain`、`200px 200px`
+        "position": "center", // alias to `background-position`, default `center`
+    },
+    "workbench.colorTheme": "Catppuccin Alt Mocha",
+    "window.confirmBeforeClose": "always",
 }
